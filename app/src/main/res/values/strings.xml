@@ -1,0 +1,810 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Starbucks</string>
+
+    <!-- Base -->
+    <string name="sb_main_menu_home_text">Inicio</string>
+    <string name="sb_main_menu_wallet_text">Tarjetas</string>
+    <string name="sb_main_menu_shops_text">Ordenar</string>
+    <string name="sb_main_menu_gifts_text">Regalos</string>
+    <string name="sb_main_menu_settings_text">Ajustes</string>
+    <string name="sb_text_understood">Entendido</string>
+    <string name="sb_text_error">Atención</string>
+    <string name="sb_text_notice">Aviso</string>
+    <string name="sb_text_cancel">Cancelar</string>
+    <string name="sb_text_optional_bracket">(Opcional)</string>
+    <string name="sb_invalid_email">El correo no es válido.</string>
+    <string name="sb_empty_email_error">El campo es obligatorio</string>
+    <string name="sb_empty_pw_error">El campo es obligatorio</string>
+    <string name="sb_text_ok">OK</string>
+    <string name="sb_text_yes">Sí</string>
+    <string name="sb_text_delete">Eliminar</string>
+    <string name="sb_text_required_field">El campo es obligatorio</string>
+    <string name="sb_text_expire_on">Expira %1$s a las %2$s</string>
+    <string name="sb_text_expire_date">Expira: %1$s</string>
+    <string name="sb_text_amount">Monto</string>
+    <string name="sb_text_card_mask" translatable="false">•••• •••• •••• %1$s</string>
+    <string name="sb_text_edit">Editar</string>
+    <string name="sb_text_confirm">Confirmar</string>
+    <string name="sb_text_field_required">El campo es obligatorio</string>
+    <string name="sb_dots_separator" translatable="false">...............................................................</string>
+    <string name="sb_text_message">MENSAJE</string>
+    <string name="sb_error_internet_connection">No se detectó una conexión a internet válida.</string>
+    <string name="sb_error_invalid_token">La sesión ha expirado. Debe volver a ingresar</string>
+    <string name="sb_label_terms_and_conditions">Términos y condiciones</string>
+
+    <!-- Home sign out screen -->
+    <string name="sb_welcome_customer">Bienvenido (a) ☕</string>
+    <string name="sb_customer_sign_in_button">Ingresar</string>
+    <string name="sb_customer_inbox_button">Inbox</string>
+    <string name="sb_customer_stores_button">Tiendas</string>
+    <string name="sb_customer_starbucks_rewards_title" translatable="false">STARBUCKS REWARDS&#8482;</string>
+    <string name="sb_customer_join_button">Únete</string>
+
+    <!-- Home sign in screen -->
+    <string name="sb_client_profile_button">Perfil</string>
+    <string name="sb_client_rewards_button">Rewards</string>
+    <string name="sb_client_rewards_details">Detalle de beneficios</string>
+    <string name="sb_client_stars_required_for_gold">Estrellas para nivel Gold</string>
+    <string name="sb_client_stars_maintain_gold">para mantener Gold</string>
+    <string name="sb_client_stars_required_for_next_reward">Estrellas para la siguiente recompensa</string>
+    <string name="sb_client_stars_expire">Nivel %1$s expira el %2$s</string>
+    <string name="sb_client_greeting_good_morning">Buenos días %1$s</string>
+    <string name="sb_client_greeting_good_afternoon">Buenas tardes %1$s</string>
+    <string name="sb_client_greeting_good_evening">Buenas tardes %1$s</string>
+    <string name="sb_client_greeting_good_evening_two">Buenas noches %1$s</string>
+    <string name="sb_client_greeting_good_night">Buenas noches %1$s</string>
+    <string name="sb_client_cash_in_button">Recargar</string>
+    <string name="sb_client_cash_out_button">Pagar %1$s</string>
+    <string name="sb_client_pay_button">Pago en tiendas</string>
+
+    <!-- Inbox -->
+    <string name="sb_inbox_title">Inbox</string>
+    <string name="sb_inbox_empty_subtitle">No hay mensajes nuevos</string>
+    <string name="sb_inbox_empty_description">Pronto recibirás información sobre ofertas de temporada, nuevas bebidas y promociones</string>
+    <string name="sb_inbox_read_now_button">Leer ahora</string>
+    <string name="sb_inbox_delete_all_confirm">¿Desea eliminar todos los mensajes?</string>
+
+    <!-- Register -->
+    <string name="sb_register_title">Regístrate</string>
+    <string name="sb_register_personal_info_subtitle">Información personal</string>
+    <string name="sb_register_first_name_hint">Nombre</string>
+    <string name="sb_register_first_surname_hint">Apellido</string>
+    <string name="sb_register_second_surname_hint">Segundo apellido</string>
+    <string name="sb_register_dni_hint">DNI o C.E.</string>
+
+    <string name="sb_register_security_subtitle">Seguridad</string>
+    <string name="sb_register_email_hint">Correo electrónico</string>
+    <string name="sb_register_pw_hint">Contraseña</string>
+    <string name="sb_register_pw_invalid">Contraseña inválida</string>
+
+    <string name="sb_register_enter_starbucks_rewards_subtitle">Ingresa a Starbucks Rewards&#8482;</string>
+    <string name="sb_register_enter_starbucks_rewards_description">Puedes usar tu tarjeta de Starbucks para ganar bebidas y productos de cortesía, obtener recargas, pagar con el teléfono y más.</string>
+    <string name="sb_register_radio_receive_digital_card">Quiero recibir una Starbucks Card digital instantánea</string>
+    <string name="sb_register_radio_join_existent_card">Quiero unirme con una Starbucks Card que ya tengo</string>
+    <string name="sb_register_starbucks_rewards_card_number_hint">Número de Starbucks Card</string>
+    <string name="sb_register_security_code_hint">Código de seguridad</string>
+
+    <string name="sb_register_birthday_subtitle">Cumpleaños</string>
+    <string name="sb_register_birthday_description">Agrega tu fecha de cumpleaños para otorgarte un cupón de bebida gratis en el mes de tu cumpleaños.</string>
+    <string name="sb_register_birthday_month">Mes</string>
+    <string name="sb_register_birthday_day">Día</string>
+
+    <string name="sb_register_preferences_and_terms_subtitle">Términos de uso</string>
+    <string name="sb_register_marketing_check">Autorizo el envío de promociones personalizadas y ofertas especiales, así como que se me informe sobre las marcas, productos y eventos de STARBUCKS</string>
+    <string name="sb_register_accept_terms_check">Acepto el tratamiento de mis datos personales bajo las condiciones de la</string>
+    <string name="sb_register_accept_terms_check_link"><u>Declaración de Privacidad</u></string>
+    <string name="sb_register_accept_terms_description">Al convertirme en miembro estoy aceptando los términos y condiciones de Starbucks Rewards&#8482; y Aviso de Privacidad</string>
+    <string name="sb_register_terms_of_use_link">Términos de uso</string>
+    <string name="sb_register_privacy_policy">Política de privacidad</string>
+    <string name="sb_register_rewards_button">Regístrate en Rewards</string>
+    <string name="sb_register_save_button">Guardar</string>
+    <string-array name="sb_register_pss_requirements">
+        <item>Entre 8 y 25 caracteres</item>
+        <item>Al menos un número</item>
+        <item>Al menos una letra mayúscula</item>
+        <item>Al menos una letra minúscula</item>
+        <item>Al menos un carácter especial</item>
+        <item>Sin espacio, tabulador o línea</item>
+    </string-array>
+
+    <string-array name="sb_register_empty_field_error">
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+        <item>El campo es obligatorio</item>
+    </string-array>
+    <string name="sb_register_invalid_dni">El campo debe contener 8 dígitos</string>
+
+    <!-- Explore Stores -->
+    <string name="sb_stores_title">Tiendas</string>
+    <string name="sb_stores_filter">Filtro</string>
+    <string name="sb_stores_shops_filter">Filtro de tiendas</string>
+    <string name="sb_stores_schedule_filter">HORARIO</string>
+    <string name="sb_stores_channels_filter">CANALES DE COMPRA</string>
+    <string name="sb_stores_services_filter">SERVICIOS</string>
+    <string name="sb_stores_restart_filters_button">Reiniciar</string>
+    <string name="sb_stores_apply_filters_button">Aplicar</string>
+    <string name="sb_stores_search_hint">Introduzca un sitio</string>
+    <string name="sb_stores_search_suggestions">SUGERENCIAS</string>
+    <string name="sb_stores_search_not_found_places">No se encontraron tiendas</string>
+    <string name="sb_stores_near">CERCA DE TI</string>
+    <string name="sb_stores_show_list">Ver lista de tiendas</string>
+    <string name="sb_stores_directions">Direcciones</string>
+    <string name="sb_stores_title_not_found_places">NO SE ENCONTRARON TIENDAS</string>
+    <string name="sb_stores_description_not_found_places">Prueba quitar algunos filtros y asegúrate de que tu búsqueda es ingresada correctamente</string>
+
+    <string name="sb_store_distance_from_you">%1$s lejos de ti</string>
+    <string name="sb_store_open_until">Abierto hasta las %1$s</string>
+    <string name="sb_store_close_until">Cerrado hasta las %1$s</string>
+    <string name="sb_store_open_all_day">Abierto las 24 horas</string>
+    <string-array name="sb_store_services_filter">
+        <item tools:ignore="Typos">Delivery</item>
+        <item tools:ignore="Typos">Pickup</item>
+        <item tools:ignore="Typos">Auto Starbucks</item>
+        <item tools:ignore="Typos">Drive Thru</item>
+    </string-array>
+    <string name="sb_store_feature_parking">Estacionamiento</string>
+    <string name="sb_store_feature_drivethru">Auto Starbucks</string>
+    <string name="sb_store_feature_pickup">Pickup Online</string>
+    <string name="sb_store_feature_delivery">Delivery</string>
+    <string name="sb_store_feature_wifi">WiFi</string>
+    <string name="sb_store_feature_mall">Centro Comercial</string>
+    <string name="sb_store_feature_rewards">Starbucks Rewards</string>
+
+    <string name="sb_store_channel_delivery">Delivery</string>
+    <string name="sb_store_channel_pickup">Pickup</string>
+    <string name="sb_store_channel_express">Express</string>
+    <string name="sb_store_channel_curbdside">Curbside</string>
+    <string name="sb_store_channel_autostarbucks">Auto Starbucks</string>
+
+    <string name="sb_store_permission_rationale_title">Comparte tu ubicación en Ajustes</string>
+    <string name="sb_store_permission_rationale_description">Parece que no compartiste tu ubicación, o se encuentra desactivada. Comparte tu ubicación para continuar disfrutando de la mejor experiencia.</string>
+    <string name="sb_store_permission_rationale_not_now">Ahora no</string>
+    <string name="sb_store_permission_rationale_settings">Ajustes</string>
+
+    <!-- Settings -->
+    <string name="sb_customer_settings_title">Ajustes</string>
+    <string name="sb_customer_settings_subtitle">ACERCA DE</string>
+    <string name="sb_customer_settings_help_content_title">Ayuda</string>
+    <string name="sb_customer_settings_main_starbucks_title">Ir a Starbucks.pe</string>
+    <string name="sb_customer_settings_terms_of_use_title">Términos de uso</string>
+    <string name="sb_customer_settings_privacy_policy_title">Política de privacidad</string>
+    <string-array name="sb_customer_settings_list">
+        <item>Preguntas frecuentes</item>
+        <item>Ir a Starbucks.pe</item>
+        <item>Términos de uso</item>
+        <item>Política de privacidad</item>
+    </string-array>
+
+    <string name="sb_client_settings_security_subtitle">SEGURIDAD</string>
+    <string name="sb_client_settings_lock_pw">Bloqueo con clave</string>
+    <string name="sb_client_settings_close_session">Cerrar sesión</string>
+    <string name="sb_client_settings_exit_title">Salir</string>
+    <string name="sb_client_settings_exit_description">¿Estás seguro que deseas cerrar tu sesión?</string>
+    <string name="sb_settings_app_version">%1$s %2$s (%3$s)</string>
+
+    <string name="sb_lock_pw_title">Bloqueo por código</string>
+    <string name="sb_access_code_description">Configura tu código de acceso</string>
+    <string name="sb_access_code_confirm">Confirma tu contraseña</string>
+    <string name="sb_access_code_confirm_error">La contraseña no es la misma</string>
+    <string name="sb_access_code_intents_error">Tienes %1$d intentos</string>
+    <string name="sb_bottom_sheet_lock_pw_title">Bloqueo con clave</string>
+    <string name="sb_bottom_sheet_deactivate_pw_option">Desactivar contraseña</string>
+    <string name="sb_bottom_sheet_change_pw_option">Cambiar contraseña</string>
+
+    <string name="sb_lock_pw_enter_pw_description">Ingresa tu contraseña</string>
+    <string name="sb_lock_pw_enter_new_pw_description">Ingresa una nueva contraseña</string>
+    <string name="sb_lock_pw_forgot_pw">¿Olvidaste la contraseña?</string>
+
+    <string name="sb_access_code_intents_warning_title">Tienes 1 solo intento</string>
+    <string name="sb_access_code_intents_warning_description">Si tu contraseña es incorrecta después de 5 intentos, deberías ingresar nuevamente y crear una nueva contraseña</string>
+
+    <!-- Profile -->
+    <string name="sb_client_profile_title">Perfil</string>
+    <string name="sb_client_profile_greeting_subtitle">Hola %1$s, eres Nivel %2$s</string>
+    <string-array name="sb_client_profile_list">
+        <item>Actividad</item>
+        <item>Starbucks Rewards</item>
+        <item>Información personal</item>
+        <!--<item>Medio de Pago</item>-->
+        <!--<item>Dirección de Medio de Pago</item>-->
+    </string-array>
+
+    <string name="sb_client_rewards_show_activity">Ver actividad</string>
+    <string name="sb_client_rewards_title_advance">PROGRESO DEL BENEFICIO</string>
+    <string name="sb_client_rewards_notice_refresh">Las Estrellas pueden verse reflejadas 24 hrs. después</string>
+    <string name="sb_client_rewards_title_status">ESTADO</string>
+    <string name="sb_client_rewards_notice_limit_green">Obtén %1$d Estrellas antes del %2$s para llegar al nivel Gold</string>
+    <string name="sb_client_rewards_notice_limit_gold">Obtén %1$d Estrellas antes del %2$s para mantener nivel Gold</string>
+    <string name="sb_client_rewards_status_green">Nivel Green</string>
+    <string name="sb_client_rewards_status_gold">Nivel Gold</string>
+    <string name="sb_client_rewards_more_about">Conoce más sobre tus beneficios</string>
+    <string name="sb_client_rewards_title">Starbucks Rewards&#8482;</string>
+    <string name="sb_client_rewards_benefits_title">Beneficios del programa</string>
+    <string name="sb_client_rewards_how_to_use_title">COMO USAR STARBUCKS REWARDS</string>
+    <string name="sb_client_rewards_earned_button">Utilizar el beneficio</string>
+    <string name="sb_client_rewards_green_option">Green</string>
+    <string name="sb_client_rewards_gold_option">Gold</string>
+    <string name="sb_client_rewards_green_benefits">¡Bienvenido a Starbucks Rewards! \n\nDesde ahora, al usar tu Starbucks Card, podrás acumular estrellas y obtener beneficios como: \n\n- Bebida gratis por cada 100 estrellas acumuladas.\n\n- Bebida de tamaño Alto o alimento de cortesía en el mes de tu cumpleaños.\n\n- 1 shot de espresso gratis adicional a tu bebida favorita por mes.\n\n- 1 bebida Alto gratis por la compra de una bolsa de café en grano.</string>
+    <string name="sb_client_rewards_gold_benefits">Cuando obtengas 200 estrellas, alcanzarás el nivel Gold. \n\nComo miembro Gold, adicional a tener los beneficios del nivel Green, podrás disfrutar de: \n\n-1 Refill gratis de café del día o té, dentro de las 4 horas posteriores a tu compra.\n\n- Cambio de café espresso por café de temporada sin costo adicional.</string>
+
+    <string name="sb_client_personal_info_title">Información personal</string>
+    <string name="sb_client_personal_info_street_hint">Dirección 1</string>
+    <string name="sb_client_personal_info_neighborhood_hint">Dirección 2</string>
+    <string name="sb_client_personal_info_city_hint">Provincia</string>
+    <string name="sb_client_personal_info_state_hint">Estado</string>
+    <string name="sb_client_personal_info_province_hint">Departamento</string>
+    <string name="sb_client_personal_info_postal_code_hint">Código postal</string>
+    <string name="sb_client_personal_info_phone_hint">Número de teléfono</string>
+
+    <string name="sb_client_payment_method_address_title">Dirección de Medio de Pago</string>
+
+    <string name="sb_client_history_voucher_title">Recibo</string>
+    <string name="sb_client_history_detail_total">Total</string>
+    <string name="sb_client_history_detail_paid_out">Pagado</string>
+
+    <!-- Benefits -->
+    <string name="sb_benefits_title">Starbucks Rewards&#8482;</string>
+    <string name="sb_customer_benefits_step_one_title">PASO 1</string>
+    <string name="sb_customer_benefits_step_one_subtitle">Acumula Estrellas</string>
+    <string name="sb_customer_benefits_step_one_description">Como miembro Starbucks Rewards, cada vez que \ncompres con una Starbucks Card registrada obtendrás \n1 estrella por cada S/ 2.00 de consumo. \n\nMientras más estrellas acumules, más beneficios tendrás.</string>
+    <string name="sb_customer_benefits_step_two_title">PASO 2</string>
+    <string name="sb_customer_benefits_step_two_subtitle">Canjea tus beneficios</string>
+    <string name="sb_customer_benefits_step_two_description" tools:ignore="Typos">Podrás revisar el número de estrellas acumuladas \ne historial de compras en tu cuenta Starbucks Rewards \ndesde tu App. \n\nLos beneficios del programa se cargan automáticamente \nen tu cuenta y podrás revisarlos en el botón Rewards \n\nSolicita a tu barista tus beneficios para hacerlos \nefectivos al momento del pago.</string>
+    <string name="sb_customer_benefits_step_three_title">PASO 3</string>
+    <string name="sb_customer_benefits_step_three_subtitle">Alcanza el Nivel Gold</string>
+    <string name="sb_customer_benefits_step_three_description">Cuando obtengas 200 estrellas, alcanzarás el nivel Gold.\n\nComo miembro Gold, adicional a tener los beneficios \ndel nivel Green, podrás disfrutar de:\n\n-1 Refill gratis de café del día o té, dentro de las 4 \nhoras posteriores a tu compra.\n\n- Cambio de café espresso por café de temporada \nsin costo adicional.</string>
+    <string name="sb_customer_benefits_sign_in_button">Ingresar</string>
+    <string name="sb_customer_benefits_join_button">Únete</string>
+
+    <!-- commons -->
+    <string-array name="sb_list_of_province" tools:ignore="Typos">
+        <item>Amazonas, 1</item>
+        <item>Ancash, 2</item>
+        <item>Apurimac, 3</item>
+        <item>Arequipa, 4</item>
+        <item>Ayacucho, 5</item>
+        <item>Cajamarca, 6</item>
+        <item>Cusco, 7</item>
+        <item>Huancavelica, 8</item>
+        <item>Huanuco, 9</item>
+        <item>Ica, 10</item>
+        <item>Junín, 11</item>
+        <item>La Libertad, 12</item>
+        <item>Lambayeque, 13</item>
+        <item>Lima, 14</item>
+        <item>Loreto, 15</item>
+        <item>Madre de Dios, 16</item>
+        <item>Moquegua, 17</item>
+        <item>Pasco, 18</item>
+        <item>Piura, 19</item>
+        <item>Puno, 20</item>
+        <item>San Martín, 21</item>
+        <item>Tacna, 22</item>
+        <item>Tumbes, 23</item>
+        <item>Ucayali, 24</item>
+    </string-array>
+
+    <string-array name="sb_list_of_city" tools:ignore="Typos">
+        <item>Chachapoyas, 1</item>
+        <item>Bagua, 1</item>
+        <item>Bongara, 1</item>
+        <item>Condorcanqui, 1</item>
+        <item>Luya, 1</item>
+        <item>Rodriguez de Mendoza, 1</item>
+        <item>Utcubamba, 1</item>
+        <item>Huaraz, 2</item>
+        <item>Aija, 2</item>
+        <item>Antonio Raymondi, 2</item>
+        <item>Asuncion, 2</item>
+        <item>Bolognesi, 2</item>
+        <item>Carhuaz, 2</item>
+        <item>Carlos F Fitzcarrald, 2</item>
+        <item>Casma, 2</item>
+        <item>Corongo, 2</item>
+        <item>Huari, 2</item>
+        <item>Huarmey, 2</item>
+        <item>Huaylas, 2</item>
+        <item>Mariscal Luzuriaga, 2</item>
+        <item>Ocros, 2</item>
+        <item>Pallasca, 2</item>
+        <item>Pomabamba, 2</item>
+        <item>Recuay, 2</item>
+        <item>Santa, 2</item>
+        <item>Sihuas, 2</item>
+        <item>Yungay, 2</item>
+        <item>Abancay, 3</item>
+        <item>Antabamba, 3</item>
+        <item>Aymaraes, 3</item>
+        <item>Cotabambas, 3</item>
+        <item>Grau, 3</item>
+        <item>Chincheros, 3</item>
+        <item>Andahuaylas, 3</item>
+        <item>Arequipa, 4</item>
+        <item>Camana, 4</item>
+        <item>Caraveli, 4</item>
+        <item>Castilla, 4</item>
+        <item>Caylloma, 4</item>
+        <item>Condesuyos, 4</item>
+        <item>Islay, 4</item>
+        <item>La Union, 4</item>
+        <item>Huamanga, 5</item>
+        <item>Cangallo, 5</item>
+        <item>Huanca Sancos, 5</item>
+        <item>Huanta, 5</item>
+        <item>La Mar, 5</item>
+        <item>Lucanas, 5</item>
+        <item>Parinacochas, 5</item>
+        <item>Paucar del Sara, 5</item>
+        <item>Vilcas Huaman, 5</item>
+        <item>San Ignacio, 6</item>
+        <item>Jaen, 6</item>
+        <item>Cutervo, 6</item>
+        <item>Chota, 6</item>
+        <item>Santa Cruz, 6</item>
+        <item>Hualgayoc, 6</item>
+        <item>Celendin, 6</item>
+        <item>San Pablo, 6</item>
+        <item>San Miguel, 6</item>
+        <item>Cajamarca, 6</item>
+        <item>Cajabamba, 6</item>
+        <item>San Marcos, 6</item>
+        <item>Cusco, 7</item>
+        <item>Acomayo, 7</item>
+        <item>Anta, 7</item>
+        <item>Calca, 7</item>
+        <item>Canas, 7</item>
+        <item>Canchis, 7</item>
+        <item>Chumbivilcas, 7</item>
+        <item>Espinar, 7</item>
+        <item>La Convencion, 7</item>
+        <item>Paruro, 7</item>
+        <item>Paucartambo, 7</item>
+        <item>Quispicanchi, 7</item>
+        <item>Urubamba, 7</item>
+        <item>Huancavelica, 8</item>
+        <item>Acobamba, 8</item>
+        <item>Angares, 8</item>
+        <item>Castrovirreyna, 8</item>
+        <item>Churcampa, 8</item>
+        <item>Huaytara, 8</item>
+        <item>Tayacaja, 8</item>
+        <item>Huanuco, 9</item>
+        <item>Ambo, 9</item>
+        <item>Dos de Mayo, 9</item>
+        <item>Huacaybamba, 9</item>
+        <item>Huamalies, 9</item>
+        <item>Leoncio Prado, 9</item>
+        <item>Marañon, 9</item>
+        <item>Pachitea, 9</item>
+        <item>Puerto Inca, 9</item>
+        <item>Lauricocha, 9</item>
+        <item>Yarowilca, 9</item>
+        <item>Ica, 10</item>
+        <item>Chincha, 10</item>
+        <item>Nazca, 10</item>
+        <item>Palpa, 10</item>
+        <item>Pisco, 10</item>
+        <item>Huancayo, 11</item>
+        <item>Chanchamayo, 11</item>
+        <item>Concepcion, 11</item>
+        <item>Junin, 11</item>
+        <item>Satipo, 11</item>
+        <item>Jauja, 11</item>
+        <item>Tarma, 11</item>
+        <item>Yauli, 11</item>
+        <item>Chupaca, 11</item>
+        <item>Trujillo, 12</item>
+        <item>Ascope, 12</item>
+        <item>Bolivar, 12</item>
+        <item>Chepen, 12</item>
+        <item>Julcan, 12</item>
+        <item>Otuzco, 12</item>
+        <item>Gran Chimu, 12</item>
+        <item>Viru, 12</item>
+        <item>Pacasmayo, 12</item>
+        <item>Pataz, 12</item>
+        <item>Sanchez Carrion, 12</item>
+        <item>Santiago de chuco, 12</item>
+        <item>Chiclayo, 13</item>
+        <item>Ferreñafe, 13</item>
+        <item>Lambayeque, 13</item>
+        <item>Lima, 14</item>
+        <item>Barranca, 14</item>
+        <item>Cajatambo, 14</item>
+        <item>Cañete, 14</item>
+        <item>Canta, 14</item>
+        <item>Huaral, 14</item>
+        <item>Huarochiri, 14</item>
+        <item>Huaura, 14</item>
+        <item>Oyon, 14</item>
+        <item>Yauyos, 14</item>
+        <item>Callao, 14</item>
+        <item>Maynas, 15</item>
+        <item>Alto Amazonas, 15</item>
+        <item>Datem del Marañon, 15</item>
+        <item>Loreto, 15</item>
+        <item>Mariscal Ramon Castilla, 15</item>
+        <item>Requena, 15</item>
+        <item>Ucayali, 15</item>
+        <item>Tambopata, 16</item>
+        <item>Manu, 16</item>
+        <item>Tahuamanu, 16</item>
+        <item>Mariscal Nieto, 17</item>
+        <item>General Sanchez Cerro, 17</item>
+        <item>Ilo, 17</item>
+        <item>Pasco, 18</item>
+        <item>Daniel Alcides Carrion, 18</item>
+        <item>Oxapampa, 18</item>
+        <item>Piura, 19</item>
+        <item>Ayabaca, 19</item>
+        <item>Huancabamba, 19</item>
+        <item>Paita, 19</item>
+        <item>Morropon, 19</item>
+        <item>Sechura, 19</item>
+        <item>Sullana, 19</item>
+        <item>Talara, 19</item>
+        <item>Puno, 20</item>
+        <item>Azangaro, 20</item>
+        <item>Carabaya, 20</item>
+        <item>Chucuito, 20</item>
+        <item>El Collao, 20</item>
+        <item>Huancane, 20</item>
+        <item>Lampa, 20</item>
+        <item>Melgar, 20</item>
+        <item>Moho, 20</item>
+        <item>San Antonio de Putina, 20</item>
+        <item>San Roman, 20</item>
+        <item>Sandia, 20</item>
+        <item>Yunguyo, 20</item>
+        <item>Bellavista, 21</item>
+        <item>Huallaga, 21</item>
+        <item>Lamas, 21</item>
+        <item>Mariscal Caceres, 21</item>
+        <item>Moyobamba, 21</item>
+        <item>Picota, 21</item>
+        <item>Rioja, 21</item>
+        <item>San Martin, 21</item>
+        <item>Tocache, 21</item>
+        <item>El Dorado, 21</item>
+        <item>Tacna, 22</item>
+        <item>Candarave, 22</item>
+        <item>Jorge Basadre, 22</item>
+        <item>Tarata, 22</item>
+        <item>Zarumilla, 23</item>
+        <item>Tumbes, 23</item>
+        <item>Contralmirante Villar, 23</item>
+        <item>Coronel Portillo, 24</item>
+        <item>Atalaya, 24</item>
+        <item>Padre Abad, 24</item>
+        <item>Purus, 24</item>
+    </string-array>
+
+    <string-array name="sb_list_of_months">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <string-array name="sb_list_weekday">
+        <item>Domingo</item>
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+    </string-array>
+
+    <!-- Inicio de Sesion / olvide mi contraseña-->
+    <string name="sb_sign_in_forgot_pss_text">¿Olvidaste tu contraseña?</string>
+    <string name="sb_sign_in_forgot_pss_title">Olvidé mi contraseña</string>
+    <string name="sb_sign_in_email_text">Correo electrónico</string>
+    <string name="sb_success_forgot_pass">Hemos enviado un correo electrónico con un link para reestablecer tu contraseña. Sigue las instrucciones del correo.</string>
+    <string name="sb_forgot_pass_text_info">Ingresa la dirección de correo con la que te registraste en Starbucks Rewards.</string>
+    <string name="sb_customer_sing_in">Inicia sesión</string>
+    <string name="sb_forgot_password">Restablecer contraseña</string>
+    <string name="sb_forgot_password_confirm">Listo</string>
+
+    <!-- Dynatrace Privacy Policy -->
+    <string name="sb_settings_privacy_policy_title">Ajustes de privacidad</string>
+    <string name="sb_settings_privacy_policy_subtitle_one">Registrar Información de Rendimiento</string>
+    <string name="sb_settings_privacy_policy_description_one">Permitir que Dynatrace registre la información de rendimiento relacionada con los botones de selección y las solicitudes de red que son activadas durante la utilización de esta aplicación. Esto habilita Dynatrace a analizar el uso, mejorar el rendimiento, y a encargarse de cualquier problema que pudiera surgir.</string>
+    <string name="sb_settings_privacy_policy_subtitle_two">Anonimizar la Información Personal</string>
+    <string name="sb_settings_privacy_policy_description_two">No incluir mi información personal (ejemplo: mi correo electrónico) en la información referida.</string>
+    <string name="sb_settings_privacy_policy_subtitle_three">Reporte de Fallos</string>
+    <string name="sb_settings_privacy_policy_description_three">Permitir que Dynatrace recopile reportes de fallos, incluyendo trazas de pila y mensajes de error. Dynatrace utiliza esta información para resolver problemas que podría tener al hacer uso de esta aplicación.</string>
+
+    <!-- Wallet -->
+    <string name="sb_customer_wallet_title">Starbucks cards</string>
+    <string name="sb_card_text_description">Obtén una tarjeta digital después de unirte al programa, o registra la Starbucks Card que ya tienes.</string>
+    <string name="sb_card_text_description_add_card">Para pagar y obtener Estrellas, adquiere una tarjeta digital instantánea o registra una tarjeta de regalo.</string>
+    <string name="sb_card_text_get_card">Obtén una tarjeta</string>
+    <string name="sb_button_gift_card">Registra una tarjeta de regalo</string>
+    <string name="sb_card_number">Número de tarjeta</string>
+    <string name="sb_security_code">Código de seguridad</string>
+    <string name="sb_register_card">Siguiente</string>
+    <string name="sb_wallet_add_card_title">Agrega una tarjeta</string>
+    <string name="sb_wallet_add_starbucks_card_hint">Número de tarjeta</string>
+    <string name="sb_wallet_edit">Editar</string>
+    <string name="sb_wallet_more">MÁS TARJETAS</string>
+    <string name="sb_wallet_add_money">Recargar</string>
+    <string name="sb_transfer_credit_title">Transferir saldo</string>
+    <string name="sb_transfer_credit_OneCard">De esta tarjeta</string>
+    <string name="sb_transfer_credit_TowCard">A esta tarjeta</string>
+    <string name="sb_transfer_credit_TowCard_name">Starbucks card</string>
+    <string name="sb_transfer_credit_text_button">Transferencia %1$s</string>
+    <string name="sb_transfer_credit_message_limit_transfer">Las Tarjetas Starbucks no pueden exceder %1$s de saldo. La diferencia permanecerá en la tarjeta de origen.</string>
+    <string name="sb_delete_card_title">¿Estás seguro?</string>
+    <string name="sb_not_delete_card">No, quiero conservar mi tarjeta</string>
+    <string name="sb_delete_card">Eliminar mi tarjeta</string>
+    <string name="sb_delete_card_with_balance">No es posible eliminar una Starbucks Card con saldo mayor a cero.</string>
+    <string name="sb_auto_recharge_card_Title">Fijar monto de auto recarga</string>
+    <string name="sb_auto_recharge_save">Guardar</string>
+    <string name="sb_auto_recharge_count_title">Auto recargar esta cantidad</string>
+    <string name="sb_auto_recharge_count_minor_title">Cuando el saldo sea menor a</string>
+    <string name="sb_title_payment_method">Medio de Pago</string>
+    <string name="sb_title_add_card">Agregar tarjeta</string>
+    <string name="sb_expiration_month_hint">MM/AAAA</string>
+    <string name="sb_cvv_hint">CVV</string>
+    <string name="sb_card_name_hint">Nombre que aparece en la tarjeta</string>
+    <string name="sb_card_address_payment_method">Dirección de Medio de Pago</string>
+    <string name="sb_register_save_card_button">Guardar tarjeta</string>
+    <string name="sb_card_title_payment_shops_dialogo">Pago en Tiendas</string>
+    <string name="sb_wallet_starbucks_card_edit">Editar</string>
+    <string name="sb_wallet_starbucks_card_add">Agregar tarjeta</string>
+    <string name="sb_wallet_starbucks_card_updated_hour">A partir de %1$s</string>
+    <string name="sb_payment_method_title_year">Año</string>
+    <string name="sb_payment_method_title_month">Mes</string>
+
+    <string name="sb_wallet_auto_recharge_enable">Activar</string>
+    <string-array name="sb_customer_edit_options">
+        <item>Hacer ésta mi tarjeta principal</item>
+        <item>Editar medio de pago</item>
+        <item>Transferir saldo</item>
+        <item>Auto recarga</item>
+        <item>Eliminar tarjeta</item>
+    </string-array>
+    <string-array name="sb_months">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="sb_wallet_bottom_sheet_title_change_main">¿Estás seguro?</string>
+    <string name="sb_wallet_bottom_sheet_change_main_option">Hacer ésta mi tarjeta principal</string>
+
+    <string name="sb_wallet_remove_card_without_balance_title">¿Quitar tarjeta sin saldo?</string>
+    <string name="sb_wallet_remove_card_without_balance_description">La tarjeta de origen tendrá S/ 0.00 después de la transferencia, pero aún puedes conservarla, si así lo deseas</string>
+    <string name="sb_wallet_remove_card_without_balance_keep_button">Conservar</string>
+    <string name="sb_wallet_remove_card_without_balance_remove_button">Quitar</string>
+
+    <string name="sb_wallet_bottom_sheet_title_add_money">Recarga tu Starbucks Card</string>
+    <string name="sb_wallet_payment_method">Editar Medio de Pago</string>
+    <string name="sb_wallet_bottom_sheet_payment_method">Medio de pago</string>
+    <string name="sb_wallet_auto_recharge">Auto recarga</string>
+    <string name="sb_wallet_auto_recharge_active">%1$s Cuando el saldo sea menor a %2$s</string>
+    <string name="sb_wallet_bottom_sheet_add_balance">Añadir %1$s</string>
+    <string name="sb_wallet_terms_and_conditions">Estoy de acuerdo con los <a href="https://www.starbucks.pe/estatico/terminos-condiciones-rewards">Términos y Condiciones</a> del Programa Starbucks Rewards y entiendo que la información se utilizará en base a las reglas del programa</string>
+    <string name="sb_bottom_sheet_recharge_confirmation">Estás a punto de cargar %1$s en tu Starbucks Card. El monto es final y no puede ser reembolsado.\n\n¿Estás de acuerdo?</string>
+
+    <string name="sb_wallet_recharge_successful_notice">Se agregó %1$s a %2$s</string>
+    <string name="sb_wallet_auto_recharge_settings_change_successful">Los ajustes de auto recarga han sido guardados</string>
+    <string name="sb_wallet_payment_error">Ocurrió un error al realizar el pago</string>
+    <string name="sb_wallet_payment_error_detail">Ocurrió un error al realizar el pago \n\nTransacción: %1$s \nFecha: %2$s \nMotivo: %3$s</string>
+    <string name="sb_wallet_no_payment_methods">Para activar esta opción, guarde un método de pago recargando primero</string>
+    <string name="sb_wallet_payment_method_hint">Método de pago</string>
+
+    <!-- Profile -->
+    <string name="sb_title_history">Actividad</string>
+    <string name="sb_wallet_subtitle_card_payment">REWARDS Y PROMOCIONES</string>
+    <string name="sb_history_empty_activity">No hay transacciones recientes</string>
+    <string name="sb_history_reload">Recarga tarjeta</string>
+    <string name="sb_history_reload_detail">Recarga tarjeta vía Web</string>
+    <string name="sb_history_cancellation">Cancelación</string>
+    <string name="sb_history_cancellation_detail">Cancelación vía Web</string>
+    <string name="sb_history_cancellation_online_detail">Cancelación vía Compra en línea</string>
+    <string name="sb_history_accrual_detail">Compra vía Compra en línea</string>
+    <string name="sb_history_balance_transfer_from">Transferencia</string>
+    <string name="sb_history_balance_transfer_from_detail">Transferencia vía Web</string>
+    <string name="sb_activity_header_this_week">ESTA SEMANA</string>
+    <string name="sb_history_points_earned">%1$s Estrellas obtenidas</string>
+    <string name="sb_history_gift_card" translatable="false">Gift card</string>
+    <string name="sb_history_transaction">Transacción</string>
+
+    <string name="sb_history_accrual">Compra en tienda</string>
+    <string name="sb_history_pos_reload">Recarga en punto de venta</string>
+    <string name="sb_history_web_app_reload">Recarga en web o app</string>
+    <string name="sb_history_balance_merge">Transferencia de saldo</string>
+    <string name="sb_history_activate_virtual_card">Activación de Starbucks Card</string>
+    <string name="sb_history_activate_physical_card">Activación de Starbucks Card</string>
+    <string name="sb_history_star_bonus">Star Bonus</string>
+    <string name="sb_history_redemption">Canje de beneficio</string>
+
+    <!-- promotions -->
+    <string name="sb_promotion_button_first">Ver más</string>
+
+    <!-- Confirm Pin -->
+    <string name="sb_pin_confirmation_title">Confirmar contraseña</string>
+
+    <!-- Biometrics -->
+    <string name="sb_biometrics_title">Confirma para continuar</string>
+    <string name="sb_biometrics_subtitle">Coloca nuevamente tu dedo para continuar.</string>
+    <string name="sb_biometrics_cancel">No ahora</string>
+
+    <string name="sb_biometrics_confirm_title">¿Deseas iniciar sesión con tu huella?</string>
+    <string name="sb_biometrics_confirm_description">Esto permitirá acceder a tu sesión y continúes viviendo la experiencia Starbucks.</string>
+    <string name="sb_biometrics_confirm_no">Ahora no</string>
+    <string name="sb_biometrics_confirm_yes">Si</string>
+
+    <string name="sb_update_title">Se recomienda actualizar la aplicación</string>
+    <string name="sb_update_button">Actualizar</string>
+
+
+    <string name="sb_text_accept">Aceptar</string>
+    <string name="sb_text_field_phone">El campo debe contener al menos 7 dígitos</string>
+    <string name="sb_text_field_phone_invalid">Teléfono no válido, verifica tu información</string>
+
+    <string name="sb_simple_number" translatable="false">1</string>
+    <string name="sb_inbox_messages_option">Mensajes</string>
+    <string name="sb_inbox_past_offers_option">Ofertas pasadas</string>
+    <string name="sb_inbox_delete_button">Eliminar</string>
+    <string name="sb_inbox_delete_all_button">Eliminar todos</string>
+    <string name="sb_client_stars_earned_title">Estrellas</string>
+    <string name="sb_location_format" translatable="false">%1$s,%2$s</string>
+    <string name="sb_duration_format" translatable="false">%1$s min</string>
+    <string name="sb_order_summary_tip_10_percent" translatable="false">10%</string>
+    <string name="sb_order_summary_tip_15_percent" translatable="false">15%</string>
+    <string name="sb_order_summary_tip_20_percent" translatable="false">20%</string>
+    <string name="sb_order_apply_label">Aplicar</string>
+    <string name="sb_store_feature_cs">Car Pickup</string>
+
+    <!-- Explore Stores -->
+    <string-array name="sb_store_schedule_filter">
+        <item>Abierto 24/7</item>
+        <item>Abierto Ahora</item>
+    </string-array>
+    <string name="sb_order_nearby_option">Cercano</string>
+    <string name="sb_order_map_add_favorite_successful">Tienda agregada a favoritos</string>
+    <string name="sb_order_map_remove_favorite_successful">Tienda eliminada de favoritos</string>
+
+    <!-- wallet -->
+    <string name="sb_auto_recharge_card_status_active">La recarga automática está activada</string>
+    <string name="sb_auto_recharge_card_status_disable">La recarga automática está desactivada</string>
+
+    <string name="sb_main_client_orders">Pedidos</string>
+    <string name="sb_orders_history_title">Pedidos</string>
+    <string name="sb_orders_empty_history_title">No hay pedidos recientes</string>
+    <string name="sb_orders_empty_history_description">Tus pedidos se mostrarán hasta que confirmes una orden.</string>
+
+    <string name="sb_orders_history_in_store" translatable="false">In Store</string>
+    <string name="sb_orders_history_delivery" translatable="false">Delivery</string>
+    <string name="sb_orders_history_car_pickup" translatable="false">Car Pickup</string>
+
+    <string name="sb_orders_item_pick_up_options">Opciones de entrega</string>
+    <string name="sb_orders_item_delivery_status">Estatus de pedido</string>
+    <string name="sb_orders_item_pending_status">En espera</string>
+    <string name="sb_orders_item_spot_number_description">Estaciónate en el lugar asignado a Car Pickup</string>
+    <string name="sb_orders_item_expired_time_car_pickup">Gracias por usar Car Pickup</string>
+    <string name="sb_orders_history_help_title">Ayuda Starbucks</string>
+    <string name="sb_orders_history_help_description">¿Tienes algún problema con tu pedido?</string>
+    <string name="sb_orders_history_help_call">Llamar</string>
+
+    <string name="sb_orders_history_detail_status">ESTATUS:</string>
+    <string-array name="sb_array_orders_history_status_desc">
+        <item>Tu orden ha sido creada</item>
+        <item>En espera de repartidor</item>
+        <item>Repartidor asignado</item>
+        <item>Repartidor en camino</item>
+        <item>Orden entregada</item>
+        <item>Orden cancelada</item>
+        <item>Tu repartidor ha llegado a tienda</item>
+        <item>Tu repartidor ha llegado</item>
+        <item>Procesando tu orden</item>
+    </string-array>
+    <string name="sb_orders_history_detail_name">Nombre:</string>
+    <string name="sb_orders_history_detail_phone">Teléfono:</string>
+    <string name="sb_orders_history_detail_vehicle">Vehículo:</string>
+
+    <string name="sb_orders_pick_up_options_title">Car Pickup</string>
+    <string name="sb_orders_pick_up_options_subtitle">Selecciona</string>
+    <string name="sb_orders_pick_up_options_curbside">Car Pickup</string>
+    <string name="sb_orders_pick_up_options_curbside_description">El barista entregará tu pedido hasta tu vehículo.</string>
+    <string name="sb_orders_pick_up_options_normal_option_title">O visítanos de forma habitual…</string>
+    <string name="sb_orders_pick_up_options_store">En tienda</string>
+    <string name="sb_orders_pick_up_options_store_description">Entra y pregunta a un barista por tu pedido. No olvides usar cubrebocas.</string>
+    <string name="sb_orders_pick_up_options_drive_thru">Drive-thru</string>
+    <string name="sb_orders_pick_up_options_thru_description">Cuando llegues, en la sección de Drive-thru pregunta al barista por tu pedido.</string>
+
+    <string name="sb_orders_curbside_title">Car Pickup</string>
+    <string name="sb_orders_curbside_description">Estaciónate e indícanos el lugar en el que te encuentras de Car Pickup.</string>
+    <string name="sb_orders_curbside_comments">Comentarios</string>
+    <string name="sb_orders_curbside_comments_description">Agrega una nota o referencia, por ejemplo, el color de tu auto.</string>
+    <string name="sb_orders_curbside_check_in">Check in</string>
+
+    <string name="sb_orders_curbside_check_in_ok_title">¡Nos vemos pronto!</string>
+    <string name="sb_orders_curbside_check_in_ok_description">Un barista entregará tu pedido hasta tu vehículo.\n\nGracias por ser miembro Starbucks Rewards.</string>
+    <string name="sb_orders_curbside_check_in_done">Entendido</string>
+
+    <!--Settings-->
+    <string-array name="sb_client_settings_list">
+        <item>Preguntas frecuentes</item>
+        <item>Ir a Starbucks.pe</item>
+        <item>Términos de uso</item>
+        <item>Política de privacidad</item>
+        <item>Eliminar cuenta</item>
+    </string-array>
+
+    <!--Delete account -->
+    <string name="sb_delete_account_dialog_body_one">Para continuar con la eliminación de cuenta es necesario que verifiques no tener saldo en tu(s) Starbucks Card registradas.</string>
+    <string name="sb_delete_account_dialog_body_two">Si cuentas con saldo deberás transferirlo a una tarjeta física que deberá estar registrada en tu cuenta antes de eliminar. Si tienes dudas comunícate a Atención a Clientes.</string>
+    <string name="sb_delete_account_dialog_body_three">Consulta Términos y condiciones:</string>
+    <string name="sb_delete_account_dialog_body_link"><font color='#00a862'>https://www.starbucks.pe/estatico/terminosdeuso</font></string>
+    <string name="sb_delete_account_dialog_button_call">Llamar a Atención al Cliente</string>
+
+    <string name="sb_client_settings_delete_warnings_subtitle">ATENCIÓN</string>
+    <string name="sb_delete_account_button_first">Cancelar</string>
+
+    <string name="sb_delete_account_notify_title_one">¡Starbucks no será\nlo mismo sin tí!</string>
+    <string name="sb_delete_account_notify_subtitle">Nos gustaría que sigas siendo parte del programa Starbucks Rewards, pero si decides eliminar tu cuenta, por favor déjanos saber los motivos de tu decisión para seguir mejorando la experiencia.</string>
+    <string name="sb_client_settings_delete_warnings_subtitle_two">MOTIVOS:</string>
+    <string name="sb_dialog_delete_account_option">Para continuar con la eliminación de cuenta, por favor selecciona un motivo.</string>
+    <string-array name="sb_delete_account_options_list">
+        <item>Problema de seguridad con mi cuenta</item>
+        <item>Tengo otra cuenta</item>
+        <item>Cambios de gustos y preferencias</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string name="sb_delete_account_comments_hint">Detalla tu experiencia</string>
+    <string name="sb_delete_account_button_first_options">Mantener cuenta</string>
+
+    <string name="sb_delete_account_description_one">Al eliminar tu cuenta perderás tu nivel, tus estrellas acumuladas y los beneficios otorgados.</string>
+    <string name="sb_delete_account_description_two">El saldo remanente de tu(s) Starbucks Cards registradas solo lo podrás utilizar si realizaste la transferencia a una tarjeta física registrada en tu cuenta antes de eliminar.</string>
+    <string name="sb_delete_account_description_three">De igual forma dejarás de recibir comunicación de Starbucks Rewards.</string>
+    <string name="sb_customer_settings_delete_account_title">Eliminar cuenta</string>
+    <string name="sb_delete_account_button_two">Eliminar cuenta</string>
+
+
+    <string name="sb_account_deleted_title">Tu solicitud ha sido enviada</string>
+    <string name="sb_account_deleted_description">Te invitamos a que te registres con una nueva cuenta.</string>
+    <string name="sb_button_account_deleted">Listo</string>
+
+    <string name="sb_delete_account_not_available_understood">Entendido</string>
+    <string name="sb_alert_text_error">Atención</string>
+    <string name="sb_alert_button_text">Entendido</string>
+    <string name="sb_delete_account_confirm">Confirmar</string>
+    <string name="sb_delete_account_confirm_title">Confirma tu contraseña</string>
+
+    <!-- Facebook -->
+
+    <string name="sb_facebook_app_id" translatable="false">586867063044844</string>
+    <string name="sb_fb_login_protocol_scheme" translatable="false">fb586867063044844</string>
+    <string name="sb_facebook_client_token" translatable="false">2b7a036554fc4054bdbb5f25bd3ace49</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.starbucks.peru.domain.response.SBPromotionsModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sb_app_spacing_small"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView_message"
+                android:layout_width="0dp"
+                android:layout_height="195dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                app:imageFromUrl="@{item.fieldImage}"
+                tools:src="@drawable/sb_app_bg_placeholder"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                style="@style/SbAppLabels_Title_H3"
+                android:id="@+id/textView_title_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sb_app_spacing_normal"
+                android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+                android:layout_marginTop="@dimen/sb_app_spacing_normal"
+                android:maxLines="2"
+                android:text="@{item.title}"
+                tools:text="Receta para cubos de hielo de café"
+                app:layout_constraintTop_toBottomOf="@id/imageView_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                style="@style/SbAppLabels_Avenir_Medium_15"
+                android:id="@+id/textView_subtitle_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sb_app_spacing_normal"
+                android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+                android:layout_marginTop="@dimen/sb_app_spacing_normal"
+                android:layout_marginBottom="@dimen/sb_app_spacing_normal"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="@{item.fieldShortDescription}"
+                tools:text="Con la llegada del verano, no hay nada que se antoje más que un delicioso café helado. He aquí un simple consejo para sacarle el máximo provecho a tu extracción."
+                app:layout_constraintTop_toBottomOf="@id/textView_title_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/button_first"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/SbAppButtons_Thin_RoundTextButton"
+                android:id="@+id/button_first"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/sb_app_spacing_normal"
+                android:layout_marginStart="@dimen/sb_app_spacing_normal"
+                android:layout_marginBottom="@dimen/sb_app_spacing_normal"
+                android:layout_height="wrap_content"
+                app:cornerRadius="18dp"
+                android:text="@string/sb_promotion_button_first"
+                app:layout_constraintTop_toBottomOf="@id/textView_subtitle_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_second"
+                style="@style/SbAppButtons_Thin_RoundButton_OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/sb_app_spacing_small"
+                android:visibility="gone"
+                tools:text="@string/sb_text_delete"
+                app:layout_constraintTop_toTopOf="@id/button_first"
+                app:layout_constraintStart_toEndOf="@id/button_first"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

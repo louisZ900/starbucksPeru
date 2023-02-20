@@ -1,0 +1,1107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/sb_status_bar_color</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="snackbarStyle">@style/Widget.MaterialComponents.Snackbar.FullWidth</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- Base application theme. -->
+<!--    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/sb_splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/sb_splash_background</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        &lt;!&ndash;<item name="postSplashScreenTheme">@style/AppTheme</item>&ndash;&gt;
+    </style>-->
+
+  <!--  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/sb_status_bar_color</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="snackbarStyle">@style/Widget.MaterialComponents.Snackbar.FullWidth</item>
+    </style>-->
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/sb_slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/sb_slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/sb_slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/sb_slide_out_right</item>
+    </style>
+
+   <!-- <style name="SbFullScreenDialog" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>-->
+
+    <style name="Sb_Dialog_Transparent" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="SbAppLabels_Title_H1">
+        <item name="android:textSize">29sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_Title_H2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/sb_black_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_Title_H3">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_Title_H4">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sb_black_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_Title_H4.Black">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+    </style>
+
+    <style name="SbAppLabels_Title_H3.Gray">
+        <item name="android:textColor">@color/sb_white_transparent</item>
+    </style>
+
+    <style name="SbAppLabels_Title_H4.Bold">
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_Title">
+        <item name="android:textSize">27sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_black_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_Title_H3.Bold">
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/sb_solid_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black.SemiBold">
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black.SemiBold.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black.SemiBold.22">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black.SemiBold.28">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black.SemiBold.42">
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black.13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_solid_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_Title_Black.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SbAppLabels_Subtitle_Gray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_white_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_Subtitle_Gray.Medium_14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SbAppLabels_Subtitle_Gray.Black">
+        <item name="android:textColor">@color/sb_black_transparent</item>
+    </style>
+
+    <style name="SbAppLabels_BobyGray_Small">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/sb_white_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_BobyGray_11">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/sb_white_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+
+    <style name="SbAppLabels_BodyWhite">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_BodyWhite.18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_BodyWhite_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+
+    <style name="SbAppLabels_BodyWhite_14.SemiBold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_BodyWhite.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SbAppLabels_BodyWhite.15.SemiBold">
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_BodyGray_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_white_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+
+    <style name="SbAppLabels_BodyBlack">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_BodyBlack_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_BodyBlack_Medium_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_BodyRegular_Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_black_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+
+    <style name="SbAppLabels_BodyRegular_Small.Green">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_green_apron_dark</item>
+    </style>
+
+    <style name="SbAppLabels_gray_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_base_gray</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_black_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_black_medium.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SbAppLabels_black_medium.24">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SbAppLabels_gray_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sb_base_gray</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_green_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sb_green_apron</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_black_bold_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_black_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_black_bold_small.10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SbAppLabels_Bold_Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_Medium_Big">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_light</item>
+        <item name="fontFamily">@font/avenir_lts_td_light</item>
+    </style>
+
+    <style name="SbAppLabels_Medium_Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_light</item>
+        <item name="fontFamily">@font/avenir_lts_td_light</item>
+    </style>
+
+    <style name="SbAppLabels_Bold_Small.Green">
+        <item name="android:textColor">@color/sb_green_apron</item>
+    </style>
+
+    <style name="SbAppLabels_Medium_Big.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppLabels_Heavy_Big_White">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_heavy</item>
+        <item name="fontFamily">@font/avenir_lts_td_heavy</item>
+    </style>
+
+    <style name="SbAppLabels_Medium_Small.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppButtons_TextButton_Icon" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sb_gray_black</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">6dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="rippleColor">@color/sb_gray_bottom_nav_icon</item>
+    </style>
+
+    <style name="SbAppButtons_DialogButton_white" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Dialog</item>
+        <item name="android:textColor">@color/sb_base_green</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="strokeColor">@color/sb_base_green</item>
+        <item name="rippleColor">@color/sb_ripple_green</item>
+    </style>
+
+    <style name="SbAppButtons_DialogButton_Green" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Dialog</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="strokeColor">@color/sb_base_green</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="SbAppButtons_Thin_RoundTextButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Thin</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="cornerRadius">15dp</item>
+    </style>
+
+    <style name="SbAppButtons_TextButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">20dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="rippleColor">@color/sb_ripple_green</item>
+        <item name="android:textColor">@color/sb_green_apron_text</item>
+        <item name="android:textAppearance">@style/SbAppEditText_TextAppearance_H4</item>
+    </style>
+
+    <style name="SbAppButtons_TextButton_H5" parent="SbAppButtons_TextButton">
+        <item name="android:insetTop">5dp</item>
+        <item name="android:insetBottom">5dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textAppearance">@style/SbAppEditText_TextAppearance_H5</item>
+    </style>
+
+    <style name="SbAppButtons_TextButton.Edit">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="SbAppButtons_Thin_RoundButton_OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Thin</item>
+        <item name="android:textColor">@color/sb_green_apron_dark</item>
+        <item name="strokeColor">@color/sb_green_apron_dark</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="cornerRadius">15dp</item>
+    </style>
+
+    <style name="SbAppButtons_Big_RoundTextButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Big</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:height">56dp</item>
+        <item name="cornerRadius">26dp</item>
+    </style>
+
+    <style name="SbAppButtons_Big_Text_Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Big</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="backgroundTint">@color/sb_green_apron_dark</item>
+        <item name="cornerRadius">26dp</item>
+        <item name="rippleColor">@color/sb_ripple_green</item>
+    </style>
+
+    <style name="SbAppButtons_Big_Text_FloatingRoundButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Big</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="backgroundTint">@color/sb_app_bg_green_button_color</item>
+        <item name="cornerRadius">26dp</item>
+        <item name="rippleColor">@color/sb_ripple_green</item>
+    </style>
+
+    <style name="SbAppButtons_Medium_Text_FloatingRoundButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Big</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="rippleColor">@color/sb_ripple_gray</item>
+    </style>
+
+    <style name="Carrito_Medium_Text_FloatingRoundButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Big</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="backgroundTint">@color/sb_app_bg_green_button_color</item>
+        <item name="cornerRadius">26dp</item>
+        <item name="rippleColor">@color/sb_ripple_green</item>
+        <!--<item name="cornerRadius">20dp</item>-->
+    </style>
+
+    <style name="SbAppButtons_TextAppearance.Dialog">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SbAppButtons_TextAppearance.Thin">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SbAppButtons_TextAppearance.Big">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SbAppButtons_TextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppToolbar_TextAppearance_H1">
+        <item name="android:textSize">29sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppToolbar_TextAppearance_H3">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbTextInputLayout_H4" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="errorIconDrawable">@drawable/sb_app_ic_error_warning</item>
+        <item name="errorIconTint">@color/sb_red_error</item>
+        <item name="errorTextColor">@color/sb_base_gray</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+        <item name="boxStrokeWidthFocused">0.5dp</item>
+        <item name="hintTextColor">@color/sb_hint_gray</item>
+    </style>
+
+    <style name="SbTextInputLayout_Autocomplete_H4" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="errorIconDrawable">@drawable/sb_app_ic_error_warning</item>
+        <item name="errorIconTint">@color/sb_red_error</item>
+        <item name="errorTextColor">@color/sb_base_gray</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+        <item name="boxStrokeWidthFocused">0.5dp</item>
+        <item name="hintTextColor">@color/sb_hint_gray</item>
+    </style>
+
+    <style name="SbAppEditText_H4" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="android:textAppearance">@style/SbAppEditText_TextAppearance_H4</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="SbAppEditText_H4.Regular">
+        <item name="android:textAppearance">@style/SbAppEditText_TextAppearance_H4.Regular</item>
+    </style>
+
+    <style name="SbAppEditText_TextAppearance_H4">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppEditText_TextAppearance_H4.Regular">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+
+    <style name="SbAppEditText_TextAppearance_H5">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppToolbar_TextAppearance_H1.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppToolbar_TextAppearance_H3.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppToolbar_TextAppearance_Benefits_H1">
+        <item name="android:textSize">27sp</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_roman</item>
+        <item name="fontFamily">@font/avenir_lts_td_roman</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppToolbar_TextAppearance_Benefits_H3">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_roman</item>
+        <item name="fontFamily">@font/avenir_lts_td_roman</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Medium_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_wallet">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_medium</item>
+        <item name="fontFamily">@font/avenir_lts_td_medium</item>
+    </style>
+
+    <style name="SbAppLabels_wallet_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_black_transparent</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_light</item>
+        <item name="fontFamily">@font/avenir_lts_td_light</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy_40">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_heavy</item>
+        <item name="fontFamily">@font/avenir_lts_td_heavy</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_heavy</item>
+        <item name="fontFamily">@font/avenir_lts_td_heavy</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy.20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy.24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy.20.Green">
+        <item name="android:textColor">@color/sb_green_apron</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy.24.Green">
+        <item name="android:textColor">@color/sb_green_apron</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Pro_Medium_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/sb_green_apron</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_heavy</item>
+        <item name="fontFamily">@font/avenir_lts_td_heavy</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Demi_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_TD_Medium_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_medium</item>
+        <item name="fontFamily">@font/avenir_lts_td_medium</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Bold">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Bold.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Bold.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Lts_light_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sb_black_transparent</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_light</item>
+        <item name="fontFamily">@font/avenir_lts_td_light</item>
+    </style>
+
+    <style name="SbAppButtons_OutlinedButton_White" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/SbAppLabels_Avenir_Demi_18</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="strokeColor">@android:color/white</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="cornerRadius">19dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">@color/sb_white_ripple</item>
+    </style>
+
+    <style name="SbAppButtons_OutlinedButton_Black" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/SbAppLabels_Avenir_Demi_18</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="strokeColor">@color/sb_base_black</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="cornerRadius">19dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppButtons_OutlinedButton_Black.Big" parent="SbAppButtons_OutlinedButton_Black">
+        <item name="android:layout_height">44dp</item>
+        <item name="cornerRadius">22dp</item>
+    </style>
+
+    <style name="SbAppButtons_OutlinedButton_Green" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Thin</item>
+        <item name="android:textColor">@color/sb_base_green</item>
+        <item name="strokeColor">@color/sb_base_green</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="SbAppButtons_Rewards" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textAppearance">@style/SbAppLabels_Avenir_TD_Medium_18</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/sb_app_spacing_normal</item>
+        <item name="android:paddingEnd">@dimen/sb_app_spacing_normal</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="rippleColor">@color/sb_base_gold</item>
+    </style>
+
+    <style name="SbAppLabels_Subtitle_card">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/sb_base_black</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppLabels_Title_List_Rewards">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/sb_base_green</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+    <style name="SbAppLabels_wallet_small_Rewards">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_base_gray</item>
+        <item name="android:fontFamily">@font/avenir_lts_td_light</item>
+        <item name="fontFamily">@font/avenir_lts_td_light</item>
+    </style>
+    <style name="SbAppLabels_card_add_count">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+    <style name="SbAppSheet_card_not_delete">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+    <style name="SbAppSheet_card_delete">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+    <style name="SbAppDetail_date_history">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_base_gray</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+    <style name="SbAppDetail_title_history">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+    <style name="SbAppView_profile">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+    <style name="SbAppView_profile_count">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+    <style name="SbAppView_profile_date">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_base_gray</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+    <style name="SbAppView_profile_Supplemental_info">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+    <style name="SbAppView_menu_bag_info">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_gray_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+    <style name="SbAppView_profile_Supplemental_info.gray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_brown_gray</item>
+    </style>
+    <style name="SbAppView_profile_header">
+        <item name="android:textSize">11sp</item>
+        <item name="android:background">@color/sb_black_12</item>
+        <item name="android:textColor">@color/sb_black_toolbar</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+    <style name="SbAppView_profile.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="SbAppSubTitle_TextCustom" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/sb_black_toolbar</item>
+        <item name="android:textAppearance">@style/SbAppEditText_TextAppearance_H4</item>
+    </style>
+    <style name="SbAppButtons_Toggle" >
+        <item name="android:background">@drawable/sb_app_bg_toggle_selector</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="android:textColor">@color/sb_app_text_color_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/sb_app_spacing_normal</item>
+        <item name="android:paddingEnd">@dimen/sb_app_spacing_normal</item>
+    </style>
+
+    <style name="SbAppButtons_Toggle_Favorite" >
+        <item name="android:background">@drawable/sb_app_bg_toggle_favorite_selector</item>
+    </style>
+
+    <style name="SbAppView_coupons_title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/sb_white_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppView_coupons_date">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sb_white_transparent</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppView_codeBar_number">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/sb_app_spacing_normal</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppButtons_ImageButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="rippleColor">@color/sb_gray_bottom_nav_icon</item>
+    </style>
+
+    <style name="SbTextInputLayout_Search_Place" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">0.5dp</item>
+        <item name="boxStrokeWidthFocused">0.5dp</item>
+        <item name="hintTextColor">@color/sb_hint_gray</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <style name="SbAppEditText_Search_Place" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="android:textAppearance">@style/SbAppLabels_Title_H1</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="SbTabLayout_Rewards">
+        <item name="tabTextAppearance">@style/SbAppTextTabItem_Style</item>
+        <item name="tabTextColor">@color/sb_white_transparent</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>"
+    </style>
+    <style name="SbAppTextTabItem_Style" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppButtons_Small_Text_FloatingRoundButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Thin</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="rippleColor">@color/sb_ripple_gray</item>
+    </style>
+
+
+    <!--MOP -->
+
+    <style name="SbTabLayout_Inbox">
+        <item name="tabTextAppearance">@style/SbAppTextTabItem_Style</item>
+        <item name="tabTextColor">@color/sb_base_black</item>
+        <item name="tabSelectedTextColor">@color/sb_base_black</item>"
+    </style>
+
+    <style name="SbTabLayout_Order">
+        <item name="tabTextAppearance">@style/SbAppTextTabItem_Style</item>
+        <item name="tabTextColor">@color/sb_brown_gray</item>
+        <item name="tabSelectedTextColor">@color/sb_base_black</item>"
+    </style>
+
+    <style name="SbAppButtons_Medium_Text_FloatingRoundButton.Green" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance.Big</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="backgroundTint">@color/sb_app_bg_green_button_color</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="rippleColor">@color/sb_ripple_green</item>
+    </style>
+
+    <style name="SbTextInputLayout_Comments" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeColor">@android:color/transparent</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="SbTextInputLayout_Comments.Warning" parent="SbTextInputLayout_Comments">
+        <item name="errorIconDrawable">@drawable/sb_app_ic_error_warning</item>
+        <item name="errorIconTint">@color/sb_red_error</item>
+        <item name="errorTextColor">@color/sb_base_gray</item>
+    </style>
+
+    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:checkable">true</item>
+        <item name="chipIconVisible">false</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="closeIconVisible">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Body2</item>
+        <item name="checkedIcon">@drawable/ic_mtrl_chip_checked_black</item>
+        <item name="android:textColor">@color/sb_app_bg_choice_chip_text_color</item>
+        <item name="chipBackgroundColor">@color/sb_app_bg_choice_chip_color</item>
+        <item name="rippleColor">@null</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="chipMinTouchTargetSize">0dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.App.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_solid_black</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="SbAppLabels_bold_small">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_solid_black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_bold_small.Gray">
+        <item name="android:textColor">@color/sb_brown_gray</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Heavy.21">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Demi">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sb_black_grey_brown</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Demi.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Demi.13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_green_apron</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Demi.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Demi.17">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Demi.24">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Regular_13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_gray_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+
+    <style name="SbAppLabels_Avenir_Bold.13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sb_gray_black</item>
+    </style>
+
+    <style name="SbAppRadioButtons_Toggle_Left" >
+        <item name="android:background">@drawable/sb_app_bg_toggle_selector_radio_left</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="android:textColor">@color/sb_app_text_color_button_light</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="SbAppRadioButtons_Toggle_Right" >
+        <item name="android:background">@drawable/sb_app_bg_toggle_selector_radio_right</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="android:textColor">@color/sb_app_text_color_button_light</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="SbAppButtons_Thin_RoundTextButton_Small" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/SbAppButtons_TextAppearance_Small</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">130dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@color/sb_green_apron</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="SbAppButtons_TextAppearance_Small" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="Sb_Title_36SP_AvenirDemiBold">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="Sb_Description_15SP_AvenirDemiBold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#8F171715</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <!--Delete Account-->
+    <style name="SbAppLabels_Title_delete_account">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/sb_base_green</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_bold</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_bold</item>
+    </style>
+
+    <style name="SbAppToolbar_TextAppearance_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/sb_green_apron_dark</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_demi</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_demi</item>
+    </style>
+
+    <style name="SbAppLabels_BodyBlack_Medium_15">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sb_base_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_medium</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_medium</item>
+    </style>
+
+    <style name="SbAppView_delete_account_option">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sb_gray_black</item>
+        <item name="android:fontFamily">@font/avenir_next_lt_pro_regular</item>
+        <item name="fontFamily">@font/avenir_next_lt_pro_regular</item>
+    </style>
+</resources>

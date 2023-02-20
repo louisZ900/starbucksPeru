@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NotoSans_Regula">
+        <item name="fontFamily">@font/notosans_regular</item>
+    </style>
+
+    <style name="NotoSans_Bold">
+        <item name="fontFamily">@font/notosans_bold</item>
+    </style>
+
+    <style name="ns_body1_sb" parent="NotoSans_Regula">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="title_subSection" parent="NotoSans_Regula">
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="ns_body2_sb" parent="NotoSans_Regula">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ns_body2_sb_bold" parent="NotoSans_Bold">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ns_body1_sb_bold" parent="NotoSans_Bold">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ns_body1_sb.texto">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ns_body2_sb.texto">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ns_body1_sb_bold.texto">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ns_body2_sb_bold.texto">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="title_subSection.texto">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="title_16sp" parent="NotoSans_Regula">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

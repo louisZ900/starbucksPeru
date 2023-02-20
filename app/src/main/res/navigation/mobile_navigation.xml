@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home_sign_on">
+
+    <fragment
+        android:id="@+id/navigation_home_sign_on"
+        android:name="com.starbucks.peru.ui.flows.sign_on.home.fragments.SBMainClientFragment"
+        android:label="@string/sb_main_menu_home_text"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_home_sign_off"
+        android:name="com.starbucks.peru.ui.flows.sign_off.fragments.home.SBMainCustomerFragment"
+        android:label="@string/sb_main_menu_home_text"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_cards_sing_off"
+        android:name="com.starbucks.peru.ui.dashboard.DashboardFragment"
+        android:label="@string/sb_main_menu_wallet_text"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_cards_sing_on"
+        android:name="com.starbucks.peru.ui.dashboard.DashboardFragment"
+        android:label="@string/sb_main_menu_wallet_text"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.starbucks.peru.ui.notifications.NotificationsFragment"
+        android:label="@string/sb_main_menu_shops_text"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
