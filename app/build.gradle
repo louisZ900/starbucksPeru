@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -17,6 +18,12 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        /*buildConfigField "String", "MC_APP_ID", MC_APP_ID
+        buildConfigField "String", "MC_ACCESS_TOKEN", MC_ACCESS_TOKEN
+        buildConfigField "String", "MC_SENDER_ID", MC_SENDER_ID
+        buildConfigField "String", "MC_MID", MC_MID
+        buildConfigField "String", "MC_SERVER_URL", MC_SERVER_URL*/
     }
 
     packagingOptions {
@@ -38,8 +45,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -60,6 +67,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -84,6 +92,12 @@ dependencies {
 
   /*  api "com.squareup.retrofit2:converter-scalars:$rootProject.ext.retrofit_converter"
     api "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$rootProject.ext.jackson_converter"*/
+
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+
+    implementation 'com.salesforce.marketingcloud:marketingcloudsdk:8.0.8'
 }
 
 kapt {

@@ -137,7 +137,10 @@ class HomeViewModel @Inject constructor(
         LogUtils().v("dateSave:::", "${sharedPref?.getString(TIMESTAMP)}")
         //LogUtils().v("dateSave:::", "1675491000")
         // val completed = currentDate.time - dateSave.time
-        val seconds = (timestamp.toLong() - (sharedPref?.getString(TIMESTAMP)?.toLong() ?: 0))
+        var seconds = if (sharedPref?.getString(TIMESTAMP) == "")
+            0
+        else
+            (timestamp.toLong() - (sharedPref?.getString(TIMESTAMP)?.toLong() ?: 0))
 
         LogUtils().v("SECONDS:::", "$seconds")
         if (seconds < 0) {

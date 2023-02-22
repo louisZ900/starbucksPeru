@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "522886353771",
+    "project_id": "starbucks-peru-test",
+    "storage_bucket": "starbucks-peru-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522886353771:android:b25ed2b0c2727eaa8db22e",
+        "android_client_info": {
+          "package_name": "com.starbucks.peru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522886353771-grl383aadfn7bjjg8bkhjtq0qog1jab7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.starbucks.peru",
+            "certificate_hash": "e51c8c4296c1133d9930dd01ed16b7f726b0af54"
+          }
+        },
+        {
+          "client_id": "522886353771-lqp8i4l4hugchamjfdqv3031lujjbq5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCepgonLcVaUmd6JAfgFK1jz5odCOSbENs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522886353771-lqp8i4l4hugchamjfdqv3031lujjbq5e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "522886353771-okiprn27f29a9f2lsqfoiqos75o3ah3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "mx.gonet.prototypes.starbucks.peru"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522886353771:android:2a91bae6d91910198db22e",
+        "android_client_info": {
+          "package_name": "com.starbucks.peru.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522886353771-lqp8i4l4hugchamjfdqv3031lujjbq5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCepgonLcVaUmd6JAfgFK1jz5odCOSbENs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522886353771-lqp8i4l4hugchamjfdqv3031lujjbq5e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "522886353771-okiprn27f29a9f2lsqfoiqos75o3ah3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "mx.gonet.prototypes.starbucks.peru"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
