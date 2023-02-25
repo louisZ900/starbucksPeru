@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/sb_fragment_sing_in">
+
+    <fragment
+        android:id="@+id/sb_fragment_sing_in"
+        android:name="com.starbucks.peru.ui.flows.sign_off.signin.fragments.SBSignInCustomerFragment"
+        tools:layout="@layout/sb_fragment_sign_in" >
+        <action
+            android:id="@+id/action_to_forgot_pss"
+            app:destination="@id/sb_app_forgot_pss_nav_graph" />
+    </fragment>
+
+    <include app:graph="@navigation/sb_app_forgot_pss_nav_graph" />
+</navigation>

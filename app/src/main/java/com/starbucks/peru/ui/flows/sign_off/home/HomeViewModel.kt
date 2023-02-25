@@ -1,4 +1,4 @@
-package com.starbucks.peru.ui.flows.sign_off.fragments.home
+package com.starbucks.peru.ui.flows.sign_off.home
 
 import android.app.Application
 import android.content.Context
@@ -15,7 +15,7 @@ import com.starbucks.peru.di.service.*
 import com.starbucks.peru.domain.response.SBOauthTokenNoLoginModel
 import com.starbucks.peru.domain.response.SBPromotionsCarouselModel
 import com.starbucks.peru.domain.response.SBPromotionsModel
-import com.starbucks.peru.ui.flows.sign_off.fragments.home.repository.HomeRepository
+import com.starbucks.peru.ui.flows.sign_off.home.repository.HomeRepository
 import com.starbucks.peru.ui.repository.TokenRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext

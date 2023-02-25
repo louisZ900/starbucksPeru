@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="4dp"
+        android:background="@android:color/white">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:expandedTitleMarginStart="@dimen/sb_app_spacing_normal"
+            app:expandedTitleTextAppearance="@style/SbAppToolbar_TextAppearance_H1"
+            app:expandedTitleMarginBottom="@dimen/sb_app_spacing_normal"
+            app:collapsedTitleTextAppearance="@style/SbAppToolbar_TextAppearance_H3"
+            app:collapsedTitleGravity="center_horizontal"
+            app:maxLines="2"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStartWithNavigation="0dp"
+                app:contentInsetEnd="64dp"
+                app:navigationIcon="@drawable/sb_app_ic_back"
+                app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <TextView
+            android:id="@+id/textView_toolbar_subtitle"
+            style="@style/SbAppLabels_Avenir_Medium_15"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sb_app_spacing_normal"
+            android:layout_marginBottom="@dimen/sb_app_spacing_normal"
+            tools:text="Abierto hasta las 22:00" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</merge>

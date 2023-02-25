@@ -13,15 +13,15 @@
 
     <fragment
         android:id="@+id/navigation_home_sign_off"
-        android:name="com.starbucks.peru.ui.flows.sign_off.fragments.home.SBMainCustomerFragment"
+        android:name="com.starbucks.peru.ui.flows.sign_off.home.fragments.SBMainCustomerFragment"
         android:label="@string/sb_main_menu_home_text"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_cards_sing_off"
-        android:name="com.starbucks.peru.ui.dashboard.DashboardFragment"
+        android:name="com.starbucks.peru.ui.flows.sign_off.wallet.fragments.SBWalletCustomerFragment"
         android:label="@string/sb_main_menu_wallet_text"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/sb_fragment_wallet_customer" />
 
     <fragment
         android:id="@+id/navigation_cards_sing_on"

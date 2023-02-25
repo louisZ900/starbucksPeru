@@ -90,6 +90,9 @@ dependencies {
     //Splash Screen
     //implementation "androidx.core:core-splashscreen:$rootProject.ext.splashScreenVersion"
 
+    //Lottie Animation
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
   /*  api "com.squareup.retrofit2:converter-scalars:$rootProject.ext.retrofit_converter"
     api "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$rootProject.ext.jackson_converter"*/
 

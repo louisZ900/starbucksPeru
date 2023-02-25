@@ -1,4 +1,4 @@
-package com.starbucks.peru.ui.flows.sign_off.fragments.home
+package com.starbucks.peru.ui.flows.sign_off.home.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,8 +14,9 @@ import com.starbucks.peru.core.utils.Resource
 import com.starbucks.peru.databinding.FragmentHomeBinding
 import com.starbucks.peru.domain.response.SBPromotionsCarouselModel
 import com.starbucks.peru.domain.response.SBPromotionsModel
-import com.starbucks.peru.ui.flows.sign_off.fragments.home.adapter.PromotionsAdapter
-import com.starbucks.peru.ui.flows.sign_off.fragments.home.adapter.PromotionsCarouselAdapter
+import com.starbucks.peru.ui.flows.sign_off.home.HomeViewModel
+import com.starbucks.peru.ui.flows.sign_off.home.adapter.PromotionsAdapter
+import com.starbucks.peru.ui.flows.sign_off.home.adapter.PromotionsCarouselAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

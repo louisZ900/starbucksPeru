@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/sb_view_main_simple_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView_container"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenCard"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="@dimen/sb_app_spacing_xlarge"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/sb_app_spacing_xlarge"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sb_app_background_card" />
+
+                <TextView
+                    android:id="@+id/cardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/sb_card_text_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagenCard" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/button_sign_in_home"
+            style="@style/SbAppButtons_Medium_Text_FloatingRoundButton"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+            android:layout_marginBottom="90dp"
+            android:text="@string/sb_customer_benefits_sign_in_button"
+            app:layout_anchor="@id/nestedScrollView_container"
+            app:layout_anchorGravity="bottom|right|end" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/button_join_home"
+            style="@style/SbAppButtons_Big_Text_FloatingRoundButton"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+            android:layout_marginBottom="@dimen/sb_app_spacing_normal"
+            android:text="@string/sb_customer_join_button"
+            app:layout_anchor="@id/nestedScrollView_container"
+            app:layout_anchorGravity="bottom|right|end" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

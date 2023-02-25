@@ -1,4 +1,4 @@
-package com.starbucks.peru.ui.flows.sign_off.fragments.home.adapter
+package com.starbucks.peru.ui.flows.sign_off.home.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

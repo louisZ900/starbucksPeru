@@ -12,6 +12,9 @@ ext.retrofit_converter_gson = '2.9.0'
 ext.jackson_converter = '2.11.1'
 ext.squareup_okhttp = '4.9.3'
 
+//Lottie Animation
+ext.lottieVersion = "5.2.0"
+
 
 //Splash Screen
 ext.splashScreenVersion = '1.0.0-beta02'

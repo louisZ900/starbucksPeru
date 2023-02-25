@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sb_grayish_white">
+
+        <include layout="@layout/sb_view_simple_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/SbAppLabels_Title_H4"
+                    android:id="@+id/messageForgotPassText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/sb_success_forgot_pass"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="@dimen/sb_app_spacing_normal"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+                    android:contentDescription="@null"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sb_app_background_forgot_password" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/SbAppButtons_Big_Text_FloatingRoundButton"
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sb_forgot_password_confirm"
+            android:layout_marginTop="@dimen/sb_app_spacing_20dp"
+            android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+            android:layout_marginBottom="@dimen/sb_app_spacing_normal"
+            android:layout_gravity="bottom|end" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

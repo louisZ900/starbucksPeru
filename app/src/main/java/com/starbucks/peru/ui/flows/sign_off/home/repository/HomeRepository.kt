@@ -1,4 +1,4 @@
-package com.starbucks.peru.ui.flows.sign_off.fragments.home.repository
+package com.starbucks.peru.ui.flows.sign_off.home.repository
 
 import com.starbucks.peru.data.EcommerceApiService
 import com.starbucks.peru.data.RewardApiService

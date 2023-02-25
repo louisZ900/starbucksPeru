@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sb_grayish_white"
+        android:filterTouchesWhenObscured="true">
+
+        <include layout="@layout/sb_view_simple_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="UselessLeaf" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout_email"
+                    style="@style/SbTextInputLayout_H4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sb_app_spacing_normal"
+                    android:layout_marginStart="@dimen/sb_app_spacing_normal"
+                    android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_email"
+                        style="@style/SbAppEditText_H4"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/sb_sign_in_email_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout_pw"
+                    style="@style/SbTextInputLayout_H4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sb_app_spacing_normal"
+                    android:layout_marginStart="@dimen/sb_app_spacing_normal"
+                    android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+                    app:passwordToggleDrawable="@drawable/sb_app_ic_selector_password"
+                    app:passwordToggleEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout_email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_pw"
+                        style="@style/SbAppEditText_H4"
+                        android:hint="@string/sb_register_pw_hint"
+                        android:inputType="textPassword"
+                        android:paddingBottom="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SbAppButtons_TextButton"
+                    android:id="@+id/forgotPassButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sb_app_spacing_2dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/sb_sign_in_forgot_pss_text"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout_pw" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            style="@style/SbAppButtons_Big_Text_FloatingRoundButton"
+            android:id="@+id/sb_button_floating_sing_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sb_customer_sing_in"
+            android:layout_marginTop="@dimen/sb_app_spacing_20dp"
+            android:layout_marginEnd="@dimen/sb_app_spacing_normal"
+            android:layout_marginBottom="@dimen/sb_app_spacing_normal"
+            android:layout_gravity="bottom|end" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

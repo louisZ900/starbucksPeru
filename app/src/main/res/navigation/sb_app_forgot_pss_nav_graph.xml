@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sb_app_forgot_pss_nav_graph"
+    app:startDestination="@id/sb_fragment_forgot_password">
+
+    <fragment
+        android:id="@+id/sb_fragment_forgot_password"
+        android:name="com.starbucks.peru.ui.flows.sign_off.signin.fragments.SBForgotPasswordFragment"
+        tools:layout="@layout/sb_fragment_forgot_password">
+        <action
+            android:id="@+id/action_sb_fragment_forgot_password_to_sb_fragment_forgot_pass_confirmation"
+            app:destination="@id/sb_fragment_forgot_pass_confirmation" />
+    </fragment>
+    <fragment
+        android:id="@+id/sb_fragment_forgot_pass_confirmation"
+        android:name="com.starbucks.peru.ui.flows.sign_off.signin.fragments.SBForgotPasswordConfirmFragment"
+        tools:layout="@layout/sb_fragment_forgot_pass_confirmation"/>
+</navigation>

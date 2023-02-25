@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:translationZ="4dp"
+        app:expanded="false"
+        android:background="@android:color/white">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleMarginStart="@dimen/sb_app_spacing_normal"
+            app:expandedTitleTextAppearance="@style/SbAppToolbar_TextAppearance_H1"
+            app:expandedTitleMarginBottom="@dimen/sb_app_spacing_normal"
+            app:collapsedTitleTextAppearance="@style/SbAppToolbar_TextAppearance_H3"
+            app:contentScrim="@android:color/white"
+            app:collapsedTitleGravity="center_horizontal"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingEnd="@dimen/sb_app_spacing_normal"
+                android:paddingStart="@dimen/sb_app_spacing_normal"
+                app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</merge>
