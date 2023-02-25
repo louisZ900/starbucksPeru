@@ -806,5 +806,19 @@
     <string name="sb_facebook_app_id" translatable="false">586867063044844</string>
     <string name="sb_fb_login_protocol_scheme" translatable="false">fb586867063044844</string>
     <string name="sb_facebook_client_token" translatable="false">2b7a036554fc4054bdbb5f25bd3ace49</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

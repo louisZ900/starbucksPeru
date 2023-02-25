@@ -1,5 +1,6 @@
 package com.starbucks.peru.ui.flows.sign_off.home.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,12 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.button.MaterialButton
 import com.starbucks.peru.R
 import com.starbucks.peru.core.fragment.showHomeTitle
 import com.starbucks.peru.core.utils.Resource
 import com.starbucks.peru.databinding.FragmentHomeBinding
 import com.starbucks.peru.domain.response.SBPromotionsCarouselModel
 import com.starbucks.peru.domain.response.SBPromotionsModel
+import com.starbucks.peru.ui.flows.shared.home.listeners.SBHomeListener
 import com.starbucks.peru.ui.flows.sign_off.home.HomeViewModel
 import com.starbucks.peru.ui.flows.sign_off.home.adapter.PromotionsAdapter
 import com.starbucks.peru.ui.flows.sign_off.home.adapter.PromotionsCarouselAdapter
@@ -29,6 +32,12 @@ class SBMainCustomerFragment : Fragment() {
     // onDestroyView.
     private lateinit var binding: FragmentHomeBinding
 
+    private var listener: SBHomeListener? = null
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        listener = context as? SBHomeListener
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -52,6 +61,10 @@ class SBMainCustomerFragment : Fragment() {
         bindViewModel()
         homeViewModel.getPromotions()
         homeViewModel.getPromotionsCorusel()
+
+        view.findViewById<MaterialButton>(R.id.button_sign_in).setOnClickListener {
+            listener?.showSignIn()
+        }
     }
 
     private fun bindViewModel(){

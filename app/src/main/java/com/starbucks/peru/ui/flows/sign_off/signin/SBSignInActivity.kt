@@ -11,7 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class SBSignInActivityy:  AppCompatActivity(),
+class SBSignInActivity: AppCompatActivity(),
     SBSignInCustomerFragment.SBSignInCustomerListener,
     SBForgotPasswordConfirmFragment.SBSignInPasswordConfirmationListener {
 

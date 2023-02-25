@@ -39,6 +39,13 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ui.flows.sign_off.signin.SBSignInActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
         <service
             android:name=".core.MyFirebaseMessagingService"
             android:exported="false">
