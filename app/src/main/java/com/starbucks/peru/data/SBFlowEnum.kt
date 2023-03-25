@@ -1,0 +1,35 @@
+package com.starbucks.peru.data
+
+enum class SBFlowEnum {
+    AccountCreate,
+    Settings,
+    OauthToken,
+    MeProfile,
+    MeDevicesRegister,
+    MeCardsHistory,
+    MeLogout,
+    MeCardsRegisterDigital,
+    MeCards,
+    MeRewards,
+    MePaymentMethods,
+    MeAddresses,
+    MeLoginValidatePassword,
+    MeCardsRegister,
+    MeCardsTransfer,
+    LoginForgotPassword,
+    StoresNearby,
+    StoresNearest,
+    MeProductsEgifts,
+    Promotions,
+    MapsDistanceMatrix,
+    MapsPlaceAutocomplete,
+    MapsPlaceDetails,
+    MapsPlaceNearbySearch,
+    PromotionsCta,
+    DeleteAccount,
+    //Niubiz
+    GetTokenNiubiz,
+    GetNiubiz,
+    GetExtornoNiubiz,
+    GetSignatureNiubiz
+}

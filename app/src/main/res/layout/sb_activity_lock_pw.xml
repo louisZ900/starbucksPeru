@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sb_grayish_white">
+
+        <include layout="@layout/sb_view_simple_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/SbAppLabels_Avenir_Medium_15"
+                    android:id="@+id/textView_action_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sb_app_spacing_32dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Establece tu código de acceso" />
+
+               <!-- <com.starbucks.peru.flows.sign_on.settings.views.SBEditPwView
+                    android:id="@+id/editPw_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sb_app_spacing_medium"
+                    app:length_pw="4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_action_description" />
+-->
+                <!--<com.google.android.material.button.MaterialButton
+                    style="@style/SbAppButtons_TextButton"
+                    android:id="@+id/button_forgot_pw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sb_app_spacing_medium"
+                    android:textAlignment="center"
+                    android:text="@string/sb_lock_pw_forgot_pw"
+                    android:textColor="@color/sb_base_gray"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/editPw_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

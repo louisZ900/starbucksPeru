@@ -21,23 +21,31 @@
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:fullBackupContent,android:allowBackup"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-
+            android:name=".ui.flows.shared.splash.SBLauncherActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
             android:name=".ui.flows.sign_off.signin.SBSignInActivity"

@@ -170,7 +170,7 @@ object NetworkModule {
             .setType(MultipartBody.FORM)
             .addFormDataPart("client_id", "u8NcrvNDjM5JfDfD")
             .addFormDataPart("client_secret", "r008nO6NDosK0t6nfccMG0IEMwlcvwBK")
-            .addFormDataPart("grant_type", GRANT_TYPE_SIGN_OFF)
+            .addFormDataPart("grant_type", GRANT_TYPE_SIGN)
             .addFormDataPart("timestamp", "${sharedPref?.getString(TIMESTAMP)}")
             .build()
 

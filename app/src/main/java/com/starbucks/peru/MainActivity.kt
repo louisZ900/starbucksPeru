@@ -6,22 +6,29 @@ import android.os.Handler
 import android.os.Looper
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.starbucks.peru.core.activities.goToFragment
 import com.starbucks.peru.databinding.ActivityMainBinding
 import com.starbucks.peru.ui.flows.shared.home.listeners.SBHomeListener
+import com.starbucks.peru.ui.flows.shared.viewmodels.SBHomeViewModel
+import com.starbucks.peru.ui.flows.sign_off.home.actions.SBHomeAction
 import com.starbucks.peru.ui.flows.sign_off.signin.SBSignInActivity
+import com.starbucks.peru.ui.flows.sign_off.signin.viewmodels.SBSignInViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity(), SBHomeListener {
 
     private lateinit var binding: ActivityMainBinding
-
+    private val viewModel: SBHomeViewModel by viewModels()
 
     private lateinit var signInRegisterLauncher : ActivityResultLauncher<Intent>
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,29 +38,13 @@ class MainActivity : AppCompatActivity(), SBHomeListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         createLaunchers()
-
-
-
-
-
+        configureBottomNavigation()
+        bindViewModel()
 
         val navView: BottomNavigationView = binding.navView
         binding.navView.inflateMenu(R.menu.bottom_nav_menu_sign_off);
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-     /*   val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home_sign_on, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )*/
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home_sign_off, R.id.navigation_cards_sing_off, R.id.navigation_orders, R.id.navigation_setting
-            )
-        )
-        //setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
 
@@ -68,6 +59,40 @@ class MainActivity : AppCompatActivity(), SBHomeListener {
         navController.graph = graph
     }
 
+    private fun bindViewModel() {
+        viewModel.getAction().observe(this, Observer(this::handleAction))
+        /*viewModelCard.getShowProgress().observe(this, Observer(this::showLoading))
+        viewModelCard.getAction().observe(this, Observer(this::handleActionCard))*/
+        //viewModel.getShowProgress().observe(this, Observer(this::showLoading))
+        //viewModel.enableShake.observe(this, Observer(this::configureShakeListener))
+    }
+
+    private fun handleAction(action: SBHomeAction) {
+        when(action) {
+            is SBHomeAction.ShowSection -> showSection(action.section)
+           /* SBHomeAction.UpdateHomeInfo -> updateWalletInfo()
+            SBHomeAction.ReturnToHome -> goToHome()
+            SBHomeAction.ShowErrorToken -> showTokenErrorMessage()
+            SBHomeAction.ShowPayInStore -> showPayInStores()
+            is SBHomeAction.ShowUpdate -> showUpdateInfo(action.option, action.description)
+            is SBHomeAction.ShowNiubizScreen -> showNiubizScreen(action.niubizData)*/
+            else -> {}
+        }
+    }
+
+    private fun showSection(fragmentTag: String) {
+        goToFragment(fragmentTag)
+    }
+
+    private fun configureBottomNavigation() {
+        binding.navView.apply {
+            //disableTooltipText()
+            setOnItemSelectedListener {
+                viewModel.getSection(it.itemId)
+            }
+        }
+    }
+
     private fun resetAppIfNeeded(resultCode: Int) {
         if (resultCode == RESULT_OK) {
             resetSections()
@@ -75,11 +100,11 @@ class MainActivity : AppCompatActivity(), SBHomeListener {
     }
 
     private fun resetSections() {
-        /*viewModel.refreshData()
-        removeAllFragments()
-        Handler(Looper.getMainLooper()).postDelayed({
-            binding.bottomNavigationMainMenu.selectedItemId = R.id.action_home
-        }, 500)*/
+        viewModel.refreshData()
+        /* removeAllFragments()
+         Handler(Looper.getMainLooper()).postDelayed({
+             binding.bottomNavigationMainMenu.selectedItemId = R.id.action_home
+         }, 500)*/
     }
 
     private fun createLaunchers() {

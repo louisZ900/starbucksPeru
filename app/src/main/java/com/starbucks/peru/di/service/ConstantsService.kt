@@ -8,6 +8,7 @@ const val ECOMMERCE_URL = "ECOMMERCE"
 const val TIMESTAMP = "TIMESTAMP"
 const val GRANT_TYPE_SIGN_ON = "password"
 const val GRANT_TYPE_SIGN_OFF = "client_credentials"
+const val GRANT_TYPE_SIGN = "grant_type_sign"
 
 
 

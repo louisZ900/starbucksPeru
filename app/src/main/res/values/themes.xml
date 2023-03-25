@@ -9,13 +9,14 @@
         <item name="snackbarStyle">@style/Widget.MaterialComponents.Snackbar.FullWidth</item>
         <!-- Customize your theme here. -->
     </style>
+
     <!-- Base application theme. -->
-<!--    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/sb_splash_background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/sb_splash_background</item>
         <item name="windowSplashScreenAnimationDuration">200</item>
-        &lt;!&ndash;<item name="postSplashScreenTheme">@style/AppTheme</item>&ndash;&gt;
-    </style>-->
+        <item name="postSplashScreenTheme">@style/Theme</item>
+    </style>
 
   <!--  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>

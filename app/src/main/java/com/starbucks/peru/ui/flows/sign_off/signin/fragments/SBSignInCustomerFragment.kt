@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.starbucks.peru.R
@@ -18,13 +19,14 @@ import com.starbucks.peru.core.utils.afterTextChanged
 import com.starbucks.peru.core.utils.animateOnPress
 import com.starbucks.peru.core.utils.removeCopyPaste
 import com.starbucks.peru.databinding.SbFragmentSignInBinding
+import com.starbucks.peru.ui.flows.sign_off.signin.viewmodels.SBSignInViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SBSignInCustomerFragment: Fragment() {
     private lateinit var binding : SbFragmentSignInBinding
 
-    //lateinit var viewModel: SBSignInViewModel
+    private val viewModel: SBSignInViewModel by viewModels()
 
     private var listener: SBSignInCustomerListener? = null
 
